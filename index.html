@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title id="mytitle">Home</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styleForHomePage.css">
+        <script>
+          function chengeTitl(newTitle){
+            document.title = newTitle;
+          }
+        </script>
+    </head>
+    <body>
+      <header>
+        <nav id="header-nav">
+           <img id="logo" src="logo.jpg"> <span>EUEEP</span>
+           <a  href="welcome.html" onclick="chengeTitl('Home')" target="myfram">Home</a>
+           <a href="Upload.html" onclick="chengeTitl('Upload')" target="myfram">UPLOAD</a>
+           <a href="Update.html" onclick="chengeTitl('Update')"target="myfram">UPDATE</a>
+           <a href="display.html" onclick="chengeTitl('Display')"target="myfram">DISPLAY</a>
+           <a href="delete.html" onclick="chengeTitl('Delete')"target="myfram">DELETE</a>  
+        </nav>
+      </header>
+      <!-- <iframe id="myfram" name="myfram"></iframe> -->
+      
+      <div class="photo-container">
+        <img width="2000px" height="600px" src="/Cover-image.gif" alt="Photo 1">
+      </div>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li bullet="none"><a href="#">About Us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">Photo</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Connect with us</h3>
+            <p>+251903439943</p>
+            <p>+251903439943</p>
+            <p>+251903439943</p>
+            <p>+251903439943</p>
+            <p>+251903439943</p>
+            <p>+251903439943</p>
+          </div>
+          <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+              <li>Web Development</li>
+              <li>Mobile Development</li>
+              <li>On-Demand Apps</li>
+              <li>Dedicated Team</li>
+              <li>iOS &amp; Android</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Learn</h3>
+            <ul>
+              <li>Social Media Platform</li>
+              <li>Software Development</li>
+              <li>Mobile app deelopment</li>
+              <li>About Technology</li>
+              <li>Programming</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Subscribe</h3>
+            <p>Follow our newsletter to stay updated about us.
+              <form action="">
+                <label for="">Email</label>
+                <input type="email" name="email" placeholder="injifano@gmail.com">
+                <input type="button" name="submit" value="SUBMIT">
+    
+              </form>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright &copy; <span id="current-year"></span> <b>BEEKHA Web Dev</b>. All Rights Reserved. | Designed by <b>BEEKHA</b></p>
+        </div>
+      </footer>
+
+      <script>
+        // Get current year and update the footer
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+      </script>
+    </body>
+</html>
